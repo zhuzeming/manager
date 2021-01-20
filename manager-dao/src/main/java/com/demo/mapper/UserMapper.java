@@ -9,11 +9,12 @@ import org.springframework.stereotype.Repository;
  * @description 请添加描述
  */
 @Repository
-public interface UserMapping {
+public interface UserMapper {
         /**
          * sel
          * @param id
          * @return
          */
         User sel(int id);
+        String sel2();
 }
