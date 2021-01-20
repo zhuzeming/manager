@@ -35,8 +35,10 @@
         <starter.version>2.1.1</starter.version>
         <starterJdbc.version>2.2.1.RELEASE</starterJdbc.version>
         <starterWeb.version>2.2.1.RELEASE</starterWeb.version>
+        <starterTest.version>2.1.9.RELEASE</starterTest.version>
 
         <mysql.version>5.1.47</mysql.version>
+        <druid.version>1.1.20</druid.version>
     </properties>
 
     <dependencyManagement>
@@ -57,17 +59,23 @@
                 <artifactId>spring-boot-starter-web</artifactId>
                 <version>${starterWeb.version}</version>
             </dependency>
-            <!--<dependency>
+            <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-test</artifactId>
+                <version>${starterTest.version}</version>
                 <scope>test</scope>
-            </dependency>-->
+            </dependency>
             <!--mysql-->
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql.version}</version>
                 <scope>runtime</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${druid.version}</version>
             </dependency>
             <!--junit-->
             <dependency>
