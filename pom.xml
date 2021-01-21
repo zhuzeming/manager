@@ -35,10 +35,10 @@
         <starter.version>2.1.1</starter.version>
         <starterJdbc.version>2.2.1.RELEASE</starterJdbc.version>
         <starterWeb.version>2.2.1.RELEASE</starterWeb.version>
-        <starterTest.version>2.1.9.RELEASE</starterTest.version>
+        <starterTest.version>2.4.1</starterTest.version>
 
         <mysql.version>5.1.47</mysql.version>
-        <druid.version>1.1.20</druid.version>
+        <druid.version>1.1.9</druid.version>
     </properties>
 
     <dependencyManagement>
@@ -86,15 +86,5 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <!--<build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>-->
-
 
 </project>
