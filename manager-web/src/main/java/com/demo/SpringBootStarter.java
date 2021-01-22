@@ -10,7 +10,7 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
  * @date Create in 2021/1/20 14:37
  * @description 请添加描述 rebase
  */
-@MapperScan("com.demo.mapper")
+@MapperScan("com.demo.dao")
 @ServletComponentScan("com.demo.service")
 @SpringBootApplication
 public class SpringBootStarter {
