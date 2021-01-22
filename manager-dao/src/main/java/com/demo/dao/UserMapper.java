@@ -1,6 +1,6 @@
-package com.demo.mapper;
+package com.demo.dao;
 
-import com.demo.entity.User;
+import com.demo.pojo.User;
 import org.springframework.stereotype.Repository;
 
 /**
