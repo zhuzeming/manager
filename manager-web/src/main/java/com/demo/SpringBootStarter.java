@@ -8,7 +8,7 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 /**
  * @author ZeMing Zhu
  * @date Create in 2021/1/20 14:37
- * @description 请添加描述
+ * @description 请添加描述 rebase
  */
 @MapperScan("com.demo.mapper")
 @ServletComponentScan("com.demo.service")
