@@ -1,8 +1,9 @@
-package com.demo;
+package com.demo.common;
 
 /**
  * Hello world!
  *
+ * @author admin
  */
 public class App 
 {

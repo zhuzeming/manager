@@ -1,5 +1,6 @@
 package com.demo;
 
+import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
 import com.demo.dao.UserMapper;
@@ -16,18 +17,23 @@ import javax.annotation.Resource;
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = {SpringBootStarter.class})
-public class AppTest {
+public class WebTest {
 
     @Resource
     UserMapper mapper;
+
     /**
      * Rigorous Test :-)
      */
     @Test
-    public void shouldAnswerWithTrue() {
+    public void testJdbc() {
+        //断言
+        assertNotNull(mapper);
+
         User user = mapper.sel(1);
         String str = mapper.sel2();
+
         System.out.println(user);
-        assertTrue( str.equals("123"));
+        System.out.println(str);
     }
 }
