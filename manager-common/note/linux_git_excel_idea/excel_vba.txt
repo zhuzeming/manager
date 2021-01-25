@@ -1,0 +1,17 @@
+Sub S()
+
+For i = 4 To 80
+Sheet1.Cells(i, 6) = "insert into MO_CLEAN_STABLE_MONEY_RATE (nu_id, vc_yearToDate, vc_projectName, nu_lineNo, dec_finalAmount, nu_reduceRate, dec_afterReduceAmount, dec_afterReduceFundAmount, dec_manualAmount, dec_afterReduceManualAmount, dec_afterReduceAdjustAmount) VALUES (S_MO_CLEAN_STABLE_MONEY_RATE.nextval, '20191218', '" + Sheet1.Cells(i, 1) + "', "
+Sheet1.Cells(i, 7) = Sheet1.Cells(i, 2)
+Sheet1.Cells(i, 8) = ", " + Sheet1.Cells(i, 3) + ", "
+Sheet1.Cells(i, 9) = Sheet1.Cells(i, 4)
+Sheet1.Cells(i, 10) = ", "
+Sheet1.Cells(i, 11) = Sheet1.Cells(i, 5)
+Sheet1.Cells(i, 12) = ", "
+Sheet1.Cells(i, 13) = Sheet1.Cells(i, 5)
+Sheet1.Cells(i, 14) = ", 0, 0, "
+Sheet1.Cells(i, 15) = Sheet1.Cells(i, 5)
+Sheet1.Cells(i, 16) = ");"
+Next i
+
+End Sub

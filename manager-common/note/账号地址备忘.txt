@@ -1,0 +1,40 @@
+maven settings 目录:
+/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/conf
+
+=======================================公司
+1、公司向日葵远程： 830670891    zzm725
+
+==================================架构师学习备忘
+1、全栈课程：
+链接：https://pan.baidu.com/s/1qfWW2R3CDEFnnoFaML3Peg 
+提取码：97s9 
+
+
+2、学习大纲：
+https://www.processon.com/view/link/5ee0e20507912929cb3914b2#map
+
+3、腾讯课堂：
+https://ke.qq.com/
+
+4、鲁班学院网址：
+https://www.lubanjava.com
+07e08940 优惠码  
+
+5、语雀：https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6#（密码：ggmc）
+笔记在这个链接上面哈~
+
+6、学号是：B2-90
+
+
+
+
+1、查看应用在哪台服务器
+https://github.com/kubernetes/kubernetes/issues/24657
+
+2、生产监测工具
+https://segmentfault.com/a/1190000014618329
+
+
+学完写文章
+1、文章中心明确
+2、简练精要

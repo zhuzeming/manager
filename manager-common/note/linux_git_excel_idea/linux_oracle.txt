@@ -1,0 +1,29 @@
+Release 11.2.0.1.0 
+
+切换至oracle用户：su - oracle
+以管理员身份登陆：sqlplus / as sysdba	 （ sqlplus /nolog       conn as sysdba  ）
+
+修改密码：alter user system identified by system;  alter user scott identified by scott;
+启动服务：startup
+关闭服务：shutdown immediate
+关闭实例：shutdown abort
+解锁用户：alter user scott account unlock;
+查看用户有效期：select * from dba_profiles where profile='DEFAULT' and resource_name='PASSWORD_LIFE_TIME';
+修改用户有效期为永久：alter profile default limit password_life_time unlimited;
+
+退出：exit
+验证用户是否可行：sqlplus system/system@orcl    sqlplus scott/scott@orcl
+启动监听：lsnrctl start
+查看监听状态：lsnrctl status
+
+查看 oracle进程：ps -ef|grep oracle
+查看Oracle sid：env | grep ORACLE
+
+oracle有三个默认的用户名和密码：
+ip:49.234.27.45
+1521
+orcl
+1.用户名:sys密码: sys
+2.用户名: system 密码: system
+
+3.用户名: scott 密码: scott

@@ -1,0 +1,9 @@
+JAVA_HOME
+JDK安装路径
+PATH
+%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;”或者是直接“%JAVA_HOME%\bin;
+CLASSPATH
+.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;
+ CMD 下： JAVAC检验
+
+如果有变量则添加后缀，用分号（；）隔开 

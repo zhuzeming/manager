@@ -1,0 +1,3 @@
+ajaxFormRequest(url,baocSuccFunc,baocFailFunc,$("#ca0301Form")[0]);
+function baocSuccFunc(data){ alert(data) }
+function baocFailFunc(data){  alert("»Øµ÷Òì³£!")}

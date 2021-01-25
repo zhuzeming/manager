@@ -1,0 +1,10 @@
+// 共通-去除必填属性
+function removeRequest(ZhiD) {
+    $("#" + ZhiD).attr("required", false);
+    $("#" + ZhiD + "_required").hide();
+}
+// 共通-添加必填属性
+function addRequest(ZhiD) {
+    $("#" + ZhiD).attr("required", true);
+    $("#" + ZhiD + "_required").show();
+}

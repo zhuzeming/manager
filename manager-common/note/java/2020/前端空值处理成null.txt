@@ -1,0 +1,12 @@
+/**
+     * 前端空字符串入后台转null
+     * @param str
+     * @return
+     */
+    public static String nullstrToNull(String str) {
+        if (str == null || "".equals(str.trim()) || "undefined".equals(str) || "null".equals(str)) {
+            return null;
+        } else {
+            return str;
+        }
+    }

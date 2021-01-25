@@ -1,0 +1,16 @@
+CREATE TABLE MHIS_LI_JIEJSQ_201026 AS
+SELECT *
+FROM MHIS_LI_JIEJSQ;
+
+UPDATE MHIS_LI_JIEJSQ
+SET nu_tikpc = NULL;
+
+-- Add/modify columns
+ALTER TABLE MHIS_LI_JIEJSQ
+    MODIFY nu_tikpc VARCHAR2(100 CHAR);
+
+UPDATE MHIS_LI_JIEJSQ jie
+SET nu_tikpc =
+        (SELECT nu_tikpc
+         FROM MHIS_LI_JIEJSQ_201026 bak
+         WHERE jie.NU_ID = bak.NU_ID);

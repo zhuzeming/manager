@@ -1,0 +1,1 @@
+OpenModalWindow(url, 0.5, '', function () { SigmaUtil.doQuery(document.forms[0],'sigma'); });

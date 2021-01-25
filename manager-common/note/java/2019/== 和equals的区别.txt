@@ -1,0 +1,6 @@
+==  值是否相等，和内存中的地址是否相等
+equals  内容是否相同
+equals 为true,== 不一定为true;
+String a=new String("foo"); String b=new String("foo");
+a==b将返回false
+a.equals(b)将返回true

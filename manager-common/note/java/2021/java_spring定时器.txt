@@ -1,0 +1,4 @@
+﻿ serviceImpl 类里，方法头前 加： @Scheduled(cron = "00 00 11 * * ?")
+实现定时任务
+
+Spring：扫描的service； springMvc：扫描的controller

@@ -1,0 +1,77 @@
+IP：49.234.27.45
+root
+123456
+mysql
+
+============================================重置密码
+=============方法一：
+sudo  su
+
+1.停掉mysql服务
+service mysqld stop
+
+2.以安全模式启动MySQL
+/usr/local/mysql/bin/mysqld_safe --skip-grant-tables &
+
+3.接下来就可以无密码登录mysql了
+/usr/local/mysql/bin/mysql -u root -p
+
+4.重设密码(authentication_string)
+use mysql;
+
+update mysql.user set authentication_string=password('root') where user='root';
+
+update user set host='%' where user = 'root';
+
+flush privileges;
+
+5.重启mysql服务
+
+quit
+
+service mysqld restart
+service mysqld status
+
+登录
+mysql -uroot -proot
+
+
+=============方法二：
+mysql -uroot -proot
+update mysql.user set authentication_string=password('root') where user='root';
+flush privileges;
+
+quit
+service mysqld restart
+service mysqld status
+
+登录
+mysql -uroot -proot
+
+================================================新建用户
+1、插入新用户
+mysql -uroot -proot
+insert into mysql.user(Host, User, authentication_string, ssl_cipher, x509_issuer,x509_subject)
+values ('%', 'test', password('test'), '', '','');
+2、创建数据库
+create database testDB;
+exit
+
+sudo su
+service mysqld restart
+exit
+3、授权
+mysql -uroot -proot
+grant all privileges on testDB.* to test@`%` identified by 'test'; -- "" ``均可，''会授权失败
+exit
+
+删除用户
+mysql -uroot -proot
+use mysql;
+Delete FROM user Where User='test' and Host='%';
+flush privileges;
+drop database testDB;
+drop user test@'%';
+
+
+
