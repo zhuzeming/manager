@@ -1,4 +1,6 @@
-package com.demo.controller.study.fibonacci;
+package com.demo.fibonacci;
+
+import org.junit.Test;
 
 import java.util.Arrays;
 
@@ -8,7 +10,9 @@ import java.util.Arrays;
  * @description Fibonacci
  */
 public class Fibonacci {
-    public static void main(String[] args) {
+
+    @Test
+    public void test() {
         int[] fibonacciArray = fibonacciFor(30);
         System.out.println(Arrays.toString(fibonacciArray));
         int[] array = new int[30];
