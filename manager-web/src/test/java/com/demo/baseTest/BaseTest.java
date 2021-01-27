@@ -6,10 +6,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author ZeMing Zhu
@@ -212,4 +209,26 @@ public class BaseTest {
         System.out.println(arrayList.toString());
         System.out.println(arrayList1.toString());
     }
+
+    @Test
+    public void asList() {
+        long[] arr = new long[]{1l, 4l, 3l, 3l};
+        List list = Arrays.asList(arr);
+        System.out.println(list.get(0));
+    }
+
+    /**
+     * 不可变集合 Collections.unmodifiableList(list)
+     */
+    @Test
+    public void unmodifiable() {
+        List list = new ArrayList(Arrays.asList(4, 2, 2, 3));
+        List modifyList = Collections.unmodifiableList(list);
+//        modifyList.set(0, 1);
+//        modifyList.add(4, 66);
+        list.set(0, 2);
+        System.out.println(modifyList.get(0));
+    }
+
+
 }
