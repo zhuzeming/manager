@@ -1,11 +1,15 @@
 package com.demo.baseTest;
 
+import java.io.Serializable;
+
 /**
  * @author ZeMing Zhu
  * @date Create in 2021/1/26 11:03
  * @description 请添加描述
  */
-public class Score implements Cloneable {
+public class Score implements Cloneable, Serializable {
+
+    private static final long serialVersionUID = 2363058445426648858L;
     private int id;
     private double level;
 

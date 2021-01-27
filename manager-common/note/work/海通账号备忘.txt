@@ -1,0 +1,80 @@
+1、==============================================================================地址账号
+================= 上网
+开发网：haitong-Dev  密码：qwe123asd
+外网：guest   qaqa2020
+
+================= MotionPro vpn工具配置：
+vpn.utfinancing.com
+
+================== uat:
+http://uat.utleasing.utflc.com/UnifiedPlatform/
+adminzj
+qwertyuiop
+
+================= 堡垒机:
+https://blj.utfinancing.com/index.php
+dhc-gaozhikang
+dhc5.bljDHC5.BLJ
+
+==================  禅道：
+http://192.168.13.85/zentao/user-login-L3plbnRhby9teS5odG1s.html
+zeming.zhu
+123456
+
+=================  svn
+https://svn.utfinancing.com/svn/201801-HXTYPT-Dev/3 开发库/A-统一业务平台/303 源程序/trunk/UnifiedPlatform
+https://svn.utfinancing.com/svn/201801-HXTYPT-Dev/3 开发库/A-统一业务平台/303 源程序/branch
+dhc-zhuzeming
+UT@1234
+
+================  报表状态
+https://shimo.im/sheets/wQxjwg6rWQ6qKJx9/MODOC
+
+=================  永洪报表开发环境87
+http://192.168.13.87:18080/bi/viewer?proc=0&action=index
+用户名：admin
+密码：g5
+
+
+2、=============================================================================================数据库
+=========================================  数仓库：
+数据仓库：用户名：dwh   密码：dwh   地址：192.168.13.88/dwsdb
+日报并表： 用户名：hbrp0720   密码：hbrp0720   地址：192.168.13.67/dwh
+月报并表： 用户名：jbfsbb0720   密码：jbfsbb0720   地址/数据库（dblink）：192.168.13.67/dwh
+
+=========================================资金
+开发：192.168.13.50 typttsdb hxtypt_dev hxtypt_dev
+UAT：192.168.13.50 typttsdb  hxtypt_rc	hxtypt_rc710
+
+=========================================中间库:
+uat:  fundzj/fundzj1234@192.168.13.168/apidb
+dev:  fundsys@192.168.13.168/apidbdev
+
+=========================================万德
+192.168.13.86  leasingdb
+ windsys   windsys
+
+=========================================金蝶
+financingeas/financingeas1234@192.168.13.168/apidb
+
+192.168.13.167/easdb2
+hxoracle
+PPEas2020
+
+========================================月结数据
+--资金本地化定时任务
+P_ZJDBDKHLH()
+--资金月结
+LI_MHIS_DATEBAK_PKG.TREASURY_MHIS_DATABAK()
+
+
+3、===================================================================================业务
+===========  应付会计岗
+胥文嫣101414
+张雯100606
+王元欣101431
+
+==========  加密对应字符串
+111
+698D51A19D8A121CE581499D7B701668
+

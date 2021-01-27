@@ -1,14 +1,5 @@
-maven settings 目录:
-/Applications/IntelliJ IDEA.app/Contents/plugins/maven/lib/maven3/conf
-
-=======================================公司
-1、公司向日葵远程： 830670891    zzm725
-
-==================================架构师学习备忘
-1、全栈课程：
-链接：https://pan.baidu.com/s/1qfWW2R3CDEFnnoFaML3Peg 
-提取码：97s9 
-
+3、==============================================学习
+http://huatu.98youxi.com/lct/#
 
 2、学习大纲：
 https://www.processon.com/view/link/5ee0e20507912929cb3914b2#map
