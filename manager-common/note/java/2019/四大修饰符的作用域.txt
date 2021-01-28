@@ -1,4 +1,0 @@
-public    作用域：所有类
-protected                子孙类、同一包
-不写                        同一包
-private                     当前类

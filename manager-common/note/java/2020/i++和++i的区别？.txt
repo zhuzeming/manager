@@ -1,6 +1,0 @@
-i++是先运算再自加，++i是先自加再运算。
-		
-	   int i = 1;
-        System.out.println(i++);//1
-
-        System.out.println(++i);//2

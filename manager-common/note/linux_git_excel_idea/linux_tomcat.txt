@@ -1,6 +1,0 @@
-tomcat服务器: http://49.234.27.45:8080
-
-在linux环境下tomcat 指定 jdk或jre版本：
-	修改‘tomcat_home’/bin/setclasspath.sh和‘tomcat_home’/bin/catalina.sh
-	加入 export JAVA_HOME=JDK路径
-	加入export JRE_HOME=JDK目录/jre

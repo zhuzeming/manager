@@ -1,9 +1,0 @@
-class testA
-{
-    public static void main(String[] args)
-    {
-        String str = null;
-        System.out.println(str+2);
-    }
-}
-输出结果：null2

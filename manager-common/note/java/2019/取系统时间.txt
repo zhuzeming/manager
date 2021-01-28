@@ -1,2 +1,0 @@
-long ns = System.nanoTime();  //java   取纳秒时间
-long then = System.currentTimeMillis(); // java取毫秒时间

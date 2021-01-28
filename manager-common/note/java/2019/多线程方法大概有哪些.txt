@@ -1,4 +1,0 @@
-继承thread 实现runable()接口，
-重写run()方法，start()启动线程，
-
-wait()线程等待，sleep()线程睡眠，notify()唤醒线程

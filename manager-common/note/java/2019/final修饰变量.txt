@@ -1,4 +1,0 @@
-使用final关键字修饰一个变量时，引用不能变，对象的内容可以改变
- final StringBuffer a=new StringBuffer("immutable");
-a=new StringBuffer("");    编译期错误
-a.append(" broken!");     通过编译

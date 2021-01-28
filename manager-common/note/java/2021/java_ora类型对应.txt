@@ -1,4 +1,0 @@
-CHAR、VARCHAR2、LONG  --> java.lang.String（string、String）
-NUMBER  --> java.math.BigDecimal、boolean、byte、short、int、long、float、double
-
-char(1)： 一个字节的定长

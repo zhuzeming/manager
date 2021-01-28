@@ -1,3 +1,0 @@
-1、StringBuffer：线程安全，StringBuilder：线程不安全（StringBuffer 的所有公开方法都是 synchronized 修饰的）
-2、StringBuffer 的toString， 用缓存区的toStringCache值，来构造字符串。StringBuilder通过复制数组构造字符串。
-3、StringBuffer因为同步锁，所有效率远低于StringBuilder 

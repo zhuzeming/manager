@@ -1,6 +1,0 @@
-下载了dom4j项目之后，解压缩，将其jar包（我的当前版本叫做dom4j-1.6.1.jar）加入class path下面。
-（Properties->Java Build Path -> Add External JARs...）。
-
-之后就可以使用其提供的API进行编程。
-
-详情百度即可。

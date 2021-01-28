@@ -1,4 +1,0 @@
-1    hashmap 是异步的，效率高些，但线程不安全 ；hashtable同步的，效率地，线程安全。
-2   hashmap 允许空值；hashtable不允许。
-
-3  .hashMap去掉了HashTable 的contains方法，但是加上了containsValue（）和containsKey（）方法。

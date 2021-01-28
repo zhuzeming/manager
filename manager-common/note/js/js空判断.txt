@@ -1,3 +1,0 @@
-if(!a){ // "",null,undefined,NaN£¬0
-        console.log("Îª¿Õ"); 
-    }

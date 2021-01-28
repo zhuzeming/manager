@@ -1,4 +1,0 @@
-Java严格区分大小写，Oracle不区分。
-Java    new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")；
-	 yyyy必须小写（YYYY是弱年份，最后一周有一天在下一年会计入下一年）；月份必须大写；24小时制也必须大写HH；
-Oracle    'yyyy-mm-dd hh24:mi:ss'

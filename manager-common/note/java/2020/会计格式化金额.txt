@@ -1,7 +1,0 @@
-private static String toNewMoney(String money1) {
-        double number = Double.parseDouble(money1);
-        NumberFormat format = NumberFormat.getCurrencyInstance(Locale.CHINA);
-        String fmnumber = format.format(number);
-        fmnumber = fmnumber.substring(1);
-        return fmnumber;
-    }
