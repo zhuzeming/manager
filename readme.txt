@@ -1,4 +1,1 @@
 maven聚合工程 : 集成springboot mybatis
-
-BUG:
-JDBC连接mysql：useSSL=true(MySQL版本高于JDBC版本)。 JDBC版本过高需要修改 useSSL=false
