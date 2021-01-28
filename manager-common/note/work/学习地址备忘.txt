@@ -1,32 +1,29 @@
-3、==============================================学习
-http://huatu.98youxi.com/lct/#
+=========================================================== 鲁班
+学号是：B2-90
 
-2、学习大纲：
+学习大纲：
 https://www.processon.com/view/link/5ee0e20507912929cb3914b2#map
 
-3、腾讯课堂：
+腾讯课堂：
 https://ke.qq.com/
 
-4、鲁班学院网址：
+鲁班官网网址：
 https://www.lubanjava.com
 07e08940 优惠码  
 
-5、语雀：https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6#（密码：ggmc）
+语雀：https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6#（密码：ggmc）
 笔记在这个链接上面哈~
 
-6、学号是：B2-90
-
-==============================================================图灵
-官网
+============================================================ 图灵官网
 www.tulingxueyuan.cn
 
 
-1、查看应用在哪台服务器
-https://github.com/kubernetes/kubernetes/issues/24657
+===========================================================  其它
+画图工具：
+http://huatu.98youxi.com/lct/#
 
-2、生产监测工具
+生产监测工具
 https://segmentfault.com/a/1190000014618329
-
 
 学完写文章
 1、文章中心明确
