@@ -7,7 +7,7 @@ package com.demo;
  */
 public class Test {
     public static void main(String[] args) {
-        int i = 0;
+        int i = 8;
         System.out.println(i++);
 //        System.out.println(++i);
 //        i++;
