@@ -1,0 +1,1 @@
+select sign(-12) from dual; --结果：-1 

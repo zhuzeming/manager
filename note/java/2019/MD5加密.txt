@@ -1,0 +1,7 @@
+在项目中把commons-codec-1.3jar放进去，
+对我们想要加密的参数值直接进行加密处理用DigestUtils.md5Hex(),
+括号中放入我们需要加密的参数即可
+User user = new User();
+user.setPassword(DigestUtils.md5Hex(password));
+
+这样即对密码进行加密了

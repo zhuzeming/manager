@@ -1,0 +1,5 @@
+去掉字符串前后所有空格
+1	function Trim(str)
+2	 { 
+3	  return str.replace(/(^\s*)|(\s*$)/g, ""); 
+4	}

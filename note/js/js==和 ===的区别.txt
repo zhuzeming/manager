@@ -1,0 +1,20 @@
+JS会认为0 = = " " ，返回值为true
+
+' 0' == ' ' //false
+
+0  == ' '  //true
+
+0  ==  '0' //true
+
+false == 'false' //false
+
+False == '0' //true
+
+False == undefined //false
+
+False == null //false
+
+Null == undefined //false
+
+ 
+

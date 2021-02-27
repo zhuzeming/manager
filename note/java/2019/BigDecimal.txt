@@ -1,0 +1,15 @@
+加法：add	减法：subtract	乘法：multiply	除法：divide
+
+Example:  new BigDecimal(val1).setScale(ws, BigDecimal.ROUND_HALF_UP);
+
+ROUND_UP =           0;向上取整(不管符号
+ROUND_DOWN =         1;向下取整(不管符号
+ROUND_CEILING =      2;向正无穷取整
+ROUND_FLOOR =        3;向负无穷取整
+ROUND_HALF_UP =      4;四舍五入 
+ROUND_HALF_DOWN =    5;五舍六入
+ROUND_HALF_EVEN =    6;此舍入模式也称为“银行家舍入法”，主要在美国使用。四舍六入，五分两种情况。
+					如果前一位为奇数，则入位，否则舍去。
+					以下例子为保留小数点1位，那么这种舍入方式下的结果。
+					1.15>1.2 1.25>1.2
+ROUND_UNNECESSARY =  7;断言请求的操作具有精确的结果,因此不需要舍入

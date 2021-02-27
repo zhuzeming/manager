@@ -1,0 +1,105 @@
+﻿/**
+     * execl导出通用方法（xlsx格式）
+     *
+     * @param request
+     * @param response
+     * @param execlPath                 空表格模板在项目中的路径
+     * @param excelName                 导出文件名称
+     * @param tableColumnNameArr        表字段名数组(大写)
+     * @param dataList                  导出内容（传入null,则导出空表格）
+     * @param accountFormatIndexArrList 会计格式列位置集合(0开始)
+     * @throws Exception
+     */
+    public static void xlsxExeclExport(HttpServletRequest request, HttpServletResponse response,
+                                       String execlPath, String excelName,
+                                       String[] tableColumnNameArr, List<Map<String, Object>> dataList,
+                                       List<Integer> accountFormatIndexArrList) throws Exception {
+        xlsxExeclExport(request, response, execlPath, excelName, tableColumnNameArr, dataList, accountFormatIndexArrList, 1);
+    }
+
+    /**
+     * execl导出通用方法（xlsx格式）
+     *
+     * @param request
+     * @param response
+     * @param execlPath                 空表格模板在项目中的路径
+     * @param excelName                 导出文件名称
+     * @param tableColumnNameArr        表字段名数组(大写)
+     * @param dataList                  导出内容（传入null,则导出空表格）
+     * @param accountFormatIndexArrList 会计格式列位置集合(0开始)
+     * @param startIndex                开始行(0开始)
+     * @throws Exception
+     */
+    public static void xlsxExeclExport(HttpServletRequest request, HttpServletResponse response,
+                                       String execlPath, String excelName,
+                                       String[] tableColumnNameArr, List<Map<String, Object>> dataList,
+                                       List<Integer> accountFormatIndexArrList, int startIndex) throws Exception {
+        //1. 设置execl文件名、格式
+        response.reset();
+        response.setContentType("application/x-msexcel;charset=UTF-8");
+        response.setHeader(
+                "Content-disposition",
+                "attachment; filename="
+                        + URLEncoder.encode(
+                        excelName + "_"
+                                + CommonUtil
+                                .getDBCurrentTimeWithymdhms()
+                                + ".xlsx", "UTF-8"));
+
+        //2.定位execl位置、sheet页等
+        String path = request.getSession().getServletContext()
+                .getRealPath(execlPath);
+        // 获取文件
+        FileInputStream fs = new FileInputStream(path);
+        //查找excel
+        XSSFWorkbook wb = new XSSFWorkbook(fs);
+        //查找sheet页
+        XSSFSheet sheet = wb.getSheetAt(0);
+
+        //3、设置单元格格式
+        XSSFCellStyle style = wb.createCellStyle();
+        //会计格式
+        style.setDataFormat((short) 4);
+
+        //4、写入
+        //有数据走下一步；无数据跳过，导出空表格
+        if (dataList != null && dataList.size() > 0) {
+            //循环结果集列表（execl行高）
+            for (int lineIndex = 0; lineIndex < dataList.size(); lineIndex++) {
+                //创建行（+ 1 为不覆盖表头）
+                XSSFRow row = sheet.createRow(lineIndex + startIndex);
+                //获取dataListMap
+                Map<String, Object> dataMap = dataList.get(lineIndex);
+                //循环表头（Excel列宽）
+                for (int columnIndex = 0; columnIndex < tableColumnNameArr.length; columnIndex++) {
+                    //获取dataList某行某列
+                    Object dataColumn = dataMap.get(tableColumnNameArr[columnIndex]);
+                    //如果无值 或者空字符串 ：创建单元格并赋值空字符串
+                    if (dataColumn == null || StringUtils.isBlank(dataColumn.toString())) {
+                        row.createCell((short) columnIndex).setCellValue("");
+                    }
+                    //如果非空
+                    else {
+                        //如果是会计格式
+                        if (accountFormatIndexArrList.contains(columnIndex)) {
+                            //创建单元格并赋值（double）
+                            row.createCell((short) columnIndex).setCellValue(((BigDecimal) dataColumn).doubleValue());
+                            //将单元格设置为会计格式
+                            row.getCell((short) columnIndex).setCellStyle(style);
+                        }
+                        //非会计格式
+                        else {
+                            //创建单元格并赋值（Str格式）
+                            row.createCell((short) columnIndex).setCellValue(nullToStr(dataColumn));
+                        }
+                    }
+                }
+            }
+        }
+
+        //5、刷新数据流、关闭数据流
+        OutputStream out = response.getOutputStream();
+        wb.write(out);
+        out.flush();
+        out.close();
+    }

@@ -1,0 +1,28 @@
+=============先安装插件再激活，否则无法下载插件
+
+1、Alibaba Java Coding Guidelines：《阿里巴巴Java开发手册》
+2、 Alibaba Cloud Toolkit：相当于一个内置xshell直接通过ssh连接服务器
+3、Restful：MVC架构时：方便查账后台方法
+4、Free Mybatis plugin：直接定位到xml相应方法的位置
+5、CodeGlance：在编辑区的右侧显示的代码地图
+6、Translation：翻译插件
+
+1、Easy Code：自动生成代码插件（https://blog.csdn.net/chenhq_/article/details/82693715 ）
+
+2、Rainbow Brackets ：彩虹括号（让视野更加注意在代码上）
+4、Grep console：彩色显示各种级别的log
+5、MyBatis Log Plugin：输出在console中：完整的sql脚本
+
+1、JRebel for IntelliJ ：热部署
+
+1、GenerateAllSetter：生成这个对象的所有set方法。将光标放在变量声明的那一行，注意不能是分号后面。然后按快捷键Alt + Enter。
+2、CamelCase：驼峰等几种格式转换。按住Shift + Alt再不停的按U
+
+
+=====================host 域名解析 访问外网更快
+1、查找网站ip
+C:\Windows\System32\drivers\etc
+140.82.114.4 github.com
+
+=====================控制台乱码：
+-Dfile.encoding=UTF-8

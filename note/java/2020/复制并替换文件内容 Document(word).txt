@@ -1,0 +1,31 @@
+/**
+     * 复制并替换文件内容 Document
+     *
+     * @param fileInPath
+     * @param fileOutPath
+     * @param replaceMap
+     * @throws Exception
+     */
+    public void replaceTextByDocument(String fileInPath, String fileOutPath, HashMap<String, String> replaceMap) throws Exception;
+
+
+
+
+
+import com.spire.doc.*;
+
+@Override
+    public void replaceTextByDocument(String fileInPath, String fileOutPath, HashMap<String, String> replaceMap) throws Exception {
+        //加载文档
+        Document doc = new Document(fileInPath);
+        //设置只替换查找的第一个文本
+        doc.setReplaceFirst(true);
+        //开始替换
+        for (Map.Entry<String, String> map : replaceMap.entrySet()) {
+            doc.replace(map.getKey(), map.getValue(), false, true);
+        }
+        //保存文档
+        doc.saveToFile(fileOutPath, FileFormat.Docx_2010);
+    }
+SysLogger.info("替换成功");
+

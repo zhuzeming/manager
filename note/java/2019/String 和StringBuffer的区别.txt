@@ -1,0 +1,13 @@
+String类提供了数值不可改变的字符串。StringBuffer类提供的字符串进行修改
+我们要把1到100的所有数字拼起来，组成一个串。
+StringBuffer sbf = new StringBuffer(); 
+for(int i=0;i<100;i++)
+{
+       sbf.append(i);
+}
+上面的代码效率很高，因为只创建了一个StringBuffer对象，而下面的代码效率很低，因为创建了101个对象。
+String str = new String(); 
+for(int i=0;i<100;i++)
+{
+       str = str + i;
+}

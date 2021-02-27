@@ -1,0 +1,2 @@
+=INDIRECT(INDIRECT("BC"&ROW())) ：execel二级联动公式 ；
+说明：INDIRECT("BC"&ROW()) 动态获取列

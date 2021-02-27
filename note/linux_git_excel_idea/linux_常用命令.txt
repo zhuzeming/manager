@@ -1,0 +1,35 @@
+切换至超级用户：sudo su
+退出服务器：exit、logout
+
+查找文件：whereis nginx
+
+查看3306端口：
+sudo su
+netstat -apn | grep 8080
+netstat -ntpl |grep 3306
+查看端口占用情况：netstat -tunlp
+杀死4908进程：kill -9 4908
+
+高亮要查询的关键字：
+ps -ef |grep tomcat
+ps -ef|grep --color java 
+
+新建文件夹：mkdir
+创建文件：touch a.txt
+
+复制文件： cp zoo_sample.cfg zoo.cfg
+
+修改文件： vim zoo.cfg
+
+删除空文件夹：rmdir 
+删除非空文件夹： rm -rf
+删除文件：rm -f
+
+解压文件：tar -xzf
+
+保存并退出：esc键 + :wq!
+不保存退出：esc键 + :q!
+
+
+============zookeeper
+1:
